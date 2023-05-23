@@ -1,0 +1,43 @@
+## YAML Template.
+---
+server:
+  port: 8081
+spring:
+  application:
+    name: EMPLOYEE-SERVICE
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    url: jdbc:h2:~/employee
+    driver-class-name: org.h2.Driver
+    username:
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
